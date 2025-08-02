@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supermarket Stock Alert</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🛒 Supermarket Stock Alert Dashboard</h1>
+
+  <div class="form">
+    <input type="text" id="itemName" placeholder="Item Name" />
+    <input type="number" id="quantity" placeholder="Initial Quantity" />
+    <input type="number" id="threshold" placeholder="Min Threshold" />
+    <button onclick="addStockItem()">Add / Update Item</button>
+    
+  </div>
+
+  <div class="stock-grid" id="stockContainer"></div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-database-compat.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Script -->
+  <script src="script.js" type="module"></script>
+</body>
+</html>
+
